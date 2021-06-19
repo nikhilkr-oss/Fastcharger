@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/padding_10"
+    android:layout_marginTop="@dimen/padding_10"
+    android:layout_marginRight="@dimen/padding_10"
+    android:layout_marginBottom="@dimen/pad60"
+    android:background="@color/color_primary"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_view"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_10">
+
+            <LinearLayout
+
+                android:id="@+id/header_battery"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/navmenu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/drawer_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:text="Fast Charging"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="start|center|center_horizontal"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:background="@drawable/circlebattery">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/loading_circleani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_10"
+                        android:visibility="visible"
+                        app:lottie_autoPlay="true"
+
+                        app:lottie_fileName="battrey.json"
+                        app:lottie_loop="false" />
+
+                    <TextView
+                        android:id="@+id/batteryperctxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/robotobold"
+                        android:text="80%"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:gravity="center_horizontal"
+                        android:text="@string/timeleft"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/batteryremtimeTV"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:gravity="center_horizontal"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="28dp" />
+
+                    <TextView
+                        android:id="@+id/txtviewalert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="21dp"
+                        android:drawableLeft="@drawable/alertred"
+                        android:drawablePadding="2dp"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:gravity="center_horizontal"
+                        android:text="78+ Power issue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/redalrtclr"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/optimizebbtn"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical|center"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="@dimen/padding_20"
+                        android:layout_marginRight="@dimen/padding_20"
+                        android:layout_marginBottom="@dimen/padding_20"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/robomed"
+                        android:gravity="center"
+                        android:text="@string/optimizenow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_view"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fastchargeic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fast_charge"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:text="@string/fastcharge"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:id="@+id/chargingcircleanim"
+                        android:layout_width="@dimen/padding_40"
+                        android:layout_height="@dimen/padding_40"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        app:lottie_autoPlay="true"
+
+                        app:lottie_fileName="loading_circle.json"
+                        app:lottie_loop="true" />
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/fullchrgic"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/full_charge"></ImageView>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:gravity="center_horizontal"
+                    android:text="@string/fullcharge"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tricklechrgic"
+                    android:layout_width="30dp"
+
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/trickle_charge"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tricklecharge"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_view"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/temperature_icon"></ImageView>
+
+                <TextView
+                    android:id="@+id/temptxtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:text="45c"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blutemp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:text="@string/temprature"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vaultage_icon"></ImageView>
+
+                <TextView
+                    android:id="@+id/voltagetxtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:gravity="center_horizontal"
+                    android:text="4.32V"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orangeclr"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:gravity="center_horizontal"
+                    android:text="@string/voltage"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/capacity_icon"></ImageView>
+
+                <TextView
+                    android:id="@+id/batterycapacitytv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:gravity="center_horizontal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grnclr"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:gravity="center_horizontal"
+                    android:text="@string/capacity"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/padding_20"
+            android:background="@drawable/card_view"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_20"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_20">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:columnCount="5"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+
+                <ImageView
+                    android:id="@+id/wifiic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:src="@drawable/ic_wifi_off" />
+
+
+                <ImageView
+                    android:id="@+id/soundic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:paddingLeft="@dimen/padding_20"
+
+                    android:src="@drawable/ic_sound_off" />
+
+                <ImageView
+                    android:id="@+id/lockscrenic"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:paddingLeft="@dimen/padding_20"
+
+                    android:src="@drawable/ic_lock_5s" />
+
+                <ImageView
+                    android:id="@+id/blutoothic"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="3"
+
+                    android:paddingLeft="@dimen/padding_20"
+                    android:src="@drawable/ic_bluetooth_off" />
+
+                <ImageView
+                    android:id="@+id/syncic"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="4"
+                    android:paddingLeft="@dimen/padding_20"
+
+
+                    android:src="@drawable/ic_sync_off" />
+
+
+                <ImageView
+                    android:id="@+id/brightnessic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:paddingTop="@dimen/padding_20"
+                    android:src="@drawable/ic_brightness_auto" />
+
+
+                <ImageView
+                    android:id="@+id/dataic"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:paddingLeft="@dimen/padding_20"
+                    android:paddingTop="@dimen/padding_20"
+
+                    android:src="@drawable/ic_data_off" />
+
+                <ImageView
+                    android:id="@+id/rotationic"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:paddingLeft="@dimen/padding_20"
+                    android:paddingTop="@dimen/padding_20"
+
+                    android:src="@drawable/ic_rotation_off" />
+
+                <ImageView
+                    android:id="@+id/locationic"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:paddingLeft="@dimen/padding_20"
+
+                    android:paddingTop="@dimen/padding_20"
+                    android:src="@drawable/ic_location_off" />
+
+                <ImageView
+                    android:id="@+id/aplanemodic"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="4"
+                    android:paddingLeft="@dimen/padding_20"
+                    android:paddingTop="@dimen/padding_20"
+
+
+                    android:src="@drawable/ic_aeroplane_mode_off" />
+
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

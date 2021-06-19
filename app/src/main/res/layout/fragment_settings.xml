@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:layout_marginBottom="@dimen/pad60"
+    android:layout_marginLeft="@dimen/padding_10"
+    android:layout_marginRight="@dimen/padding_10"
+    android:background="@color/color_primary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/header_battery"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/navmenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/drawer_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@fonts/robotoreg"
+                android:text="@string/Settings"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_view"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_20"
+                android:text="@string/fastcharge"
+                android:textColor="@color/blutxtclr"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/disable"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/wifi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/britghtnes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/blutooth"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/sync"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_view"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_20"
+                android:text="@string/fastcharge"
+                android:textColor="@color/blutxtclr"
+                android:textSize="15dp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableStart="@drawable/ic_donot_disturb_icon"
+                        android:drawableLeft="@drawable/ic_donot_disturb_icon"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/dnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="22:00 - 02:00"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableStart="@drawable/ic_low_power_icon"
+                        android:drawableLeft="@drawable/ic_low_power_icon"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/lowpowrremaning"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableStart="@drawable/ic_charging_complete_icon"
+                        android:drawableLeft="@drawable/ic_charging_complete_icon"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:text="@string/chargecomplet"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="50dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/padding_20"
+
+            android:background="@drawable/card_view"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general"
+                android:paddingBottom="@dimen/padding_20"
+
+                android:textColor="@color/blutxtclr"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableStart="@drawable/ic_temperature_icon2"
+                        android:drawableLeft="@drawable/ic_temperature_icon2"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:gravity="center_horizontal"
+                        android:text="@string/temprature"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/togglecheck"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blutxtclr"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableStart="@drawable/ic_language_icon"
+                        android:drawableLeft="@drawable/ic_language_icon"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@fonts/robotoreg"
+                        android:gravity="center_horizontal"
+                        android:text="@string/language"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

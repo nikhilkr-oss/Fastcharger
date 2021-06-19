@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary">
+
+    <LinearLayout
+        android:id="@+id/header_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_back_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robomed"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:gravity="start"
+            android:text="Feedback"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <com.example.fastcharger.customwidgets.PoppinsMedium
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textSize="@dimen/textsize_15"
+        android:layout_marginRight="@dimen/margin_20"
+        android:fontFamily="@font/robotoreg"
+        android:text="Please write your feedback"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_feedback" />
+
+
+    <com.example.fastcharger.customwidgets.YelloEditText
+
+        android:id="@+id/et_send_feedbk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:hint="Type here"
+        android:textColor="@color/white"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/textsize_12"
+        app:backgroundTint="@color/color_secondary"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_36"
+        android:layout_marginRight="@dimen/margin_20"
+        android:backgroundTint="@color/color_secondary"
+        android:background="@drawable/rounded_border_hollow"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_send_feedbk">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_scrnsht"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_gal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_ad_scrnsht"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/image_icon" />
+
+        <com.example.fastcharger.customwidgets.PoppinsMedium
+            android:id="@+id/tv_ad_scrnsht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robomed"
+            android:paddingTop="2dp"
+            android:textColor="@color/white"
+            android:text="Add Screenshot"
+            android:textSize="@dimen/textsize_18"
+android:gravity="center|center_horizontal"
+            android:drawableStart="@drawable/ic_baseline_add_24"
+            android:drawableTint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_gal"
+            android:drawableLeft="@drawable/ic_baseline_add_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.example.fastcharger.customwidgets.YelloEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:textColor="@color/white"
+        android:imeOptions="actionDone"
+        android:hint="Enter your email (optional)"
+        android:textSize="@dimen/textsize_12"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/color_secondary"
+        app:layout_constraintTop_toBottomOf="@+id/ll_2" />
+
+    <com.example.fastcharger.customwidgets.PoppinsMedium
+        android:id="@+id/tv_systeminfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:fontFamily="@font/robothin"
+        android:text="@string/your_system_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blutxtclr"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/blubutn"
+        android:minHeight="0dp"
+        android:paddingLeft="@dimen/padding_80"
+        android:paddingTop="@dimen/padding_12"
+        android:paddingRight="@dimen/padding_80"
+        android:paddingBottom="@dimen/padding_12"
+        android:textSize="@dimen/textsize_16"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_systeminfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

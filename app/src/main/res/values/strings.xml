@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Fast Charging</string>
+    <string name="app_description">Displays information about device battery state</string>
+
+    <string name="battery_percentage">%1$d%%</string>
+    <string name="battery_voltage">%1$dmV</string>
+    <string name="battery_temperature">%1$.1f°</string>
+
+    <string-array name="battery_status">
+        <item>Not present</item>
+        <item>Unknown</item>
+        <item>Charging</item>
+        <item>Discharging</item>
+        <item>Not charging</item>
+        <item>Full</item>
+    </string-array>
+
+
+    <string-array name="battery_health">
+        <item>Not present</item>
+        <item>Unknown</item>
+        <item>Good</item>
+        <item>Overheated</item>
+        <item>Dead</item>
+        <item>Too high voltage</item>
+        <item>Failure</item>
+        <item>Cold</item>
+    </string-array>
+
+    <string name="battery_technology_not_present">Not applicable</string>
+    <string name="battery_technology_unknown">Unknown</string>
+
+    <string name="accessibility_battery">Battery indicator</string>
+    <string name="warning_battery_low">Lower level of battery!</string>
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+
+    <string name="fastcharge">Fast Charge</string>
+    <string name="fullcharge">Full Charge</string>
+    <string name="tricklecharge">Trickle Charge</string>
+    <string name="optimizenow">Optimize Now</string>
+    <string name="battery">Battery</string>
+    <string name="history">History</string>
+    <string name="Settings">Settings</string>
+    <string name="moreapps">More Apps</string>
+
+    <string name="chargehistory">Charge History</string>
+    <string name="your_system_info">Your systeminfo will be sent to Fast Charging tech Department</string>
+    <string name="rateus">Rate Us</string>
+
+    <string name="shareapp">Share App</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="timeleft"> Time Left</string>
+    <string name="temprature">Temprature</string>
+    <string name="voltage">Voltage</string>
+    <string name="capacity">Capacity</string>
+    <string name="normal">Normal</string>
+    <string name="overcharge">Over Charge</string>
+    <string name="healthy">Healthy</string>
+    <string name="lastchargerec">Last charge records</string>
+    <string name="sincelastfulchrg">Since last full charge</string>
+    <string name="chrgtyp">Charger type</string>
+    <string name="chargedurtion">Charge duration</string>
+    <string name="chargeqty">Charge quantity</string>
+    <string name="sync">Sync</string>
+    <string name="blutooth">Blutooth</string>
+    <string name="britghtnes">Brightness</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="disable">Disable</string>
+    <string name="chargecomplet">Charge complete</string>
+    <string name="lowpowrremaning">Low power remainder</string>
+    <string name="dnd">Do not disturb</string>
+    <string name="general">General</string>
+    <string name="language">Language</string>
+    <string name="send">Send</string>
+    <string name="batteryopt">BATTERY OPTIMIZATION</string>
+    <string name="optimiztitle">GREAT! SOLVED THE POWER PROBLEM</string>
+    <string name="enjoyapp">Enjoying App?</string>
+    <string name="howfeelapp">How do you feel about this app?</string>
+    <string name="maybenxttime">May be next time</string>
+    <string name="Lastchargrecords">LAST 3 DAYS CHARGE RECORD</string>
+
+</resources>
+

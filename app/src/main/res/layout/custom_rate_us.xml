@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lldia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curve_shap"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/head"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/rating_header"
+        />
+    <ImageView
+        android:layout_marginTop="@dimen/padding_40"
+        android:layout_alignBottom="@+id/head"
+        android:layout_width="@dimen/padding_40"
+android:paddingTop="@dimen/padding_20"
+        android:layout_height="@dimen/padding_50"
+       android:layout_centerHorizontal="true"
+        android:background="@drawable/rating_hand"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robomed"
+        android:gravity="center"
+        android:text="@string/enjoyapp"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robothin"
+        android:gravity="center"
+        android:text="@string/howfeelapp"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ToggleButton
+            android:id="@+id/firststr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/starfirst"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/secondtstr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/starfirst"
+            android:src="@drawable/star"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/thirdstr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/starfirst"
+
+            android:text=""
+
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/fourstar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/starfirst"
+            android:text=""
+
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/fvestr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/starfirst"
+            android:text=""
+
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/fivestarhand"-->
+
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_marginTop="-20dp"-->
+<!--        android:layout_marginRight="13dp"-->
+
+<!--        android:visibility="visible"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_fileName="hand.json"-->
+<!--        app:lottie_loop="true" />-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/cancel_button"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary"
+            android:clickable="true"
+            android:fontFamily="@font/robotoreg"
+            android:gravity="center|center_horizontal"
+            android:text="@string/maybenxttime"
+            android:textSize="12dp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

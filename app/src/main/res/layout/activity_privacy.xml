@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+   >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        app:expandedTitleMarginStart="70dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+            app:titleTextColor="@color/white"
+            android:backgroundTint="#00B7D1"
+
+            android:id="@+id/app_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_scrollFlags="noScroll">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar1"
+                    app:titleTextColor="@color/white"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:minHeight="60dp"
+                    app:layout_collapseMode="pin" />
+                <ImageView
+                    android:id="@+id/bakbutton"
+                    android:layout_margin="@dimen/padding_20"
+                    android:layout_width="@dimen/padding_20"
+                    android:layout_height="@dimen/padding_20"
+                    android:padding="@dimen/padding_20"
+                    android:background="@drawable/ic_back_icon" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="40dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/robotoreg"
+               />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="@dimen/padding_50"
+        android:layout_height="@dimen/padding_50"
+        android:layout_margin="@dimen/textsize_16"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:background="@drawable/message_icon" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

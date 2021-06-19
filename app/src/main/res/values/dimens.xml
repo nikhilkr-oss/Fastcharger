@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="battery_angle_rounding">8dp</dimen>
+    <dimen name="battery_border_width">2dp</dimen>
+
+    <dimen name="battery_indicator_width">128dp</dimen>
+    <dimen name="battery_indicator_height">192dp</dimen>
+    <dimen name="battery_indicator_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="icon_padding">16dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="menutxtsize">15dp</dimen>
+    <dimen name="scrnpadding" >2dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="pad70">70dp</dimen>
+    <dimen name="pad60">60dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="textsize_15">15dp</dimen>
+    <dimen name="textsize_12">12dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="textsize_18">18dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="padding_80">80dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="textsize_16">16dp</dimen>
+    <dimen name="rounded_border_gray_radius">10dp</dimen>
+    <dimen name="pad30">30</dimen>
+
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+</resources>

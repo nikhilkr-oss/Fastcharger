@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_50"
+        android:background="@drawable/ic_more_apps_icon"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobold"
+            android:text="Fast"
+            android:textAllCaps="true"
+            android:textColor="@color/blutxtclr"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robothin"
+            android:text="Charging"
+            android:textAllCaps="true"
+            android:textColor="@color/blutxtclr"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@fonts/robotoreg"
+        android:gravity="center"
+        android:text="Version 1.0.1"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/chargehistorymenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/charge_history_icon_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:paddingLeft="20dp"
+                    android:text="@string/chargehistory"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settingsmenu"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/settings_icon_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+
+                    android:paddingLeft="20dp"
+                    android:text="@string/Settings"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moreappmenu"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/more_apps_icon_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+
+                    android:paddingLeft="20dp"
+                    android:text="@string/moreapps"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rateus"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/rate_us_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+
+                    android:paddingLeft="20dp"
+                    android:text="Rate Us"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareappmenu"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/share_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:paddingLeft="20dp"
+                    android:text="@string/shareapp"
+                    android:textColor="@color/white"
+
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feedbkmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/feedback_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:paddingLeft="20dp"
+                    android:text="@string/feedback"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/privcypolcmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/privacy_policy_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@fonts/robotoreg"
+                    android:paddingLeft="20dp"
+                    android:text="@string/privacypolicy"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/menutxtsize" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
